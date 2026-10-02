@@ -1,0 +1,34 @@
+# Local datasets
+dataset/
+
+# Training outputs and model artifacts
+models/
+evaluations/
+checkpoints/
+runs/
+outputs/
+results/
+wandb/
+*.ckpt
+*.h5
+*.hdf5
+*.joblib
+*.onnx
+*.pkl
+*.pt
+*.pth
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.venv/
+env/
+venv/
+
+# Local config
+.env
+.env.*
