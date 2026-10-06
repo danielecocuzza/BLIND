@@ -106,13 +106,15 @@ Authentication is formulated as an **image retrieval problem**.
 
 Given a query acquisition \(q\), its fingerprint is compared with every fingerprint in the gallery using cosine similarity:
 
+$$
 \[
 S(q,g)=
 \frac{e_q \cdot e_g}
 {\|e_q\|_2 \|e_g\|_2}
 \]
+$$
 
-where \(e_q\) is the query embedding and \(e_g\) is a gallery embedding.
+where $e_q$ is the query embedding and \(e_g\) is a gallery embedding.
 
 Gallery samples are ranked according to their similarity with the query.
 
