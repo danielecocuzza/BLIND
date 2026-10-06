@@ -33,15 +33,24 @@ At inference time, authentication is performed through **cosine similarity** bet
 
 ```mermaid
 flowchart LR
-    A["Paper acquisition"] --> B["Pre-processing"]
-    B --> C["Siamese CNN"]
-    C --> D["512-D fingerprint"]
+    I1["Input Image I₁"] --> CNN1["CNN(I₁)"]
+    I2["Input Image I₂"] --> CNN2["CNN(I₂)"]
 
-    E["Gallery fingerprints"] --> F["Cosine similarity"]
-    D --> F
+    CNN1 --> E1["Embedding e₁"]
+    CNN2 --> E2["Embedding e₂"]
 
-    F --> G["Top-k retrieval"]
-    G --> H["Paper identity"]
+    E1 --> CL["Contrastive Loss"]
+    E2 --> CL
+
+    classDef input fill:#f5f5f5,stroke:#168aad,stroke-width:2px;
+    classDef cnn fill:#eaf7ee,stroke:#168aad,stroke-width:2px;
+    classDef embedding fill:#168aad,color:#fff,stroke:#126782,stroke-width:2px;
+    classDef loss fill:#ffc107,color:#111,stroke:#e09f00,stroke-width:2px;
+
+    class I1,I2 input;
+    class CNN1,CNN2 cnn;
+    class E1,E2 embedding;
+    class CL loss;
 ```
 
 The authentication pipeline consists of four main stages:
