@@ -42,10 +42,10 @@ flowchart LR
     E1 --> CL["Contrastive Loss"]
     E2 --> CL
 
-    classDef input fill:#d9e6f2,stroke:#4ea8de,stroke-width:2px,color:#1b1b1b;
-    classDef cnn fill:#dce8e2,stroke:#52b788,stroke-width:2px,color:#1b1b1b;
-    classDef embedding fill:#168aad,stroke:#126782,stroke-width:2px,color:#ffffff;
-    classDef loss fill:#ffbe0b,stroke:#d89b00,stroke-width:2px,color:#111111;
+    classDef input fill:#f1f5f9,stroke:#64748b,stroke-width:2px,color:#111827;
+    classDef cnn fill:#e2e8f0,stroke:#475569,stroke-width:2px,color:#111827;
+    classDef embedding fill:#0f8db3,stroke:#0b6e8a,stroke-width:2px,color:#ffffff;
+    classDef loss fill:#fbbf24,stroke:#d97706,stroke-width:2px,color:#111111;
 
     class I1,I2 input;
     class CNN1,CNN2 cnn;
