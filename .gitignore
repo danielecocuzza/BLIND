@@ -1,14 +1,10 @@
 # Local datasets
-dataset/
+dataset/BRIGHTNESS
+dataset/FIRST_ACQUISITION
+dataset/REACQUISITIONS
+dataset/NOISE
 
 # Training outputs and model artifacts
-models/
-evaluations/
-checkpoints/
-runs/
-outputs/
-results/
-wandb/
 *.ckpt
 *.h5
 *.hdf5
